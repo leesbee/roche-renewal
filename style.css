@@ -4,11 +4,10 @@
     box-sizing: border-box;
 }
 
-HTML,body{
+body{
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: 700;
     min-width: 1500px;
-    font-size: 16px;
     height: 100%;
 }
 :root{
@@ -50,18 +49,18 @@ header #main_nav {
 }
 
 .down {
-    background-color:rgb(255, 255, 255);
     transition-duration:0.4s;
     transition-timing-function:ease;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-.down #Main_nav > .gnb > li > a {
+
+.down  #Main_nav > .gnb > li > a {
     color: #000;
 }
-.down #Sub_nav .gnb li a {
+.down  #Sub_nav .gnb li a {
     color: #000;
 }
-.down #Sub_nav .gnb li {
+.down  #Sub_nav .gnb li {
     color: #000;
 }
 #Main_nav h1 {
@@ -176,9 +175,8 @@ header > #Sub_nav .gnb{
 }
 .scroll img {
     position: relative;
-    z-index: 999;
+    top: 30px ;
     left: 48.5%;
-    transform: translateY(-200%) ;
 }
 
 /*Company Info*/
@@ -204,6 +202,10 @@ header > #Sub_nav .gnb{
     display: block;
     width: 150px;
     border-bottom: 3px solid var(--main);
+}
+#CompanyInfo > p {
+    text-align: left;
+    left: -100px;
 }
 #CompanyInfo .container > p {
     padding-top: 8px;
@@ -243,7 +245,8 @@ strong img{
     font-size: 18px;
 }
 .BottomLayout > .pagenumber {
-    bottom: 0px;
+    position: relative;
+    top: 120px;
 }
 .BottomLayout > .pagenumber p {
     font-size: 24px;
@@ -500,8 +503,9 @@ footer {
     padding-top: 60px;
     text-align: center;
     /* font-weight: bold;  */
-    padding-bottom: 60px; 
+    padding-bottom: 60px;
   }  
+
   /* .logo {
     font-size: 40px;
   } */
@@ -513,8 +517,8 @@ footer {
   .footerMenu > li > a {
     color: #fff;
   }  
-  footer .footerMenu span,  
-  footer .address span {
+  footer  .footerMenu span,  
+  footer  .address span {
     margin-left: 10px;
     margin-right: 10px;
     /* font-size: 10px; */
@@ -522,12 +526,17 @@ footer {
     transform: translateY(-2px); 
     /* font-weight: bold; */
   }  
-  footer .address {
+    footer .address {
     margin-bottom: 5px;
     font-size: 14px;
     color: #fff;
+    line-height: 1.5rem;
   }
+  
   footer .copy {
     color: #fff;
     font-size: 14px;
+  }
+  footer .logo {
+      margin-bottom: 20px;
   }
