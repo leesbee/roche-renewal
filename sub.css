@@ -168,6 +168,9 @@
 #Location .container .map p {
     text-align: center;
 }
+#Location .container iframe {
+    margin-top: 40px;
+}
 #Location .container .spot {
     text-align: left;
 }
