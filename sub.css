@@ -199,6 +199,11 @@
 #Location .container .map-detail .Spot {
     margin-right: 300px;
 }
+#Location .container .map-detail .phone-number {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
 #Location .container .map-detail .Spot .hanam {
     margin-right: 100px;
 }
