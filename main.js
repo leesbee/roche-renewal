@@ -37,17 +37,6 @@ $(function(){
     $(this).addClass('active');      
     })
   });    
-  
-  $(function(){
-    var $Sub_active = $('#Sub1_contents .Sub_GNB > li');
-
-    $Sub_active.hover(function(e){
-    e.preventDefault();
-            
-    $Sub_active.removeClass('active');
-    $(this).addClass('active');      
-    })
-  });    
 
   //Tappanel 
   $(function(){
@@ -62,44 +51,22 @@ $(function(){
     })
   });
 
+ //Scroll  
+  $(function(){
+     // 얼마나 스크롤 되는지 값
+     var scrollDepth = 599;
 
-$(function(){
-    var $header = $('header'); //헤더를 변수에 넣기
-    var $page = $('#CompanyInfo'); //색상이 변할 부분
-    var $window = $(window);
-    var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
-    
-    $window.resize(function(){ //반응형을 대비하여 리사이즈시 top값을 다시 계산
-      pageOffsetTop = $page.offset().top;
-    });
-    
-    $window.on('scroll', function(){ //스크롤시
-      var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
-      $header.toggleClass('down', scrolled); //클래스 토글
-      var scrolled = $window.scrollTop() >= page >= 100; //맨위스크롤하면
-      $header.toggleClass(false); //클래스 토글
-    });
-  });
-  
-
-
-//Subpage scroll  //
-$(function(){
-  var $header = $('header'); //헤더를 변수에 넣기
-  var $page = $('#Sub1_contents'); //색상이 변할 부분
-  var $window = $(window);
-  var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
-  
-  
-  $window.resize(function(){ //반응형을 대비하여 리사이즈시 top값을 다시 계산
-    pageOffsetTop = $page.offset().top;
-  });
-  
-  $window.on('scroll', function(){ //스크롤시
-    var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
-    $header.toggleClass('down', scrolled); //클래스 토글
-    var scrolled = $window.scrollTop() >= page >= 100; //맨위스크롤하면
-    $header.toggleClass(false); //클래스 토글
-  });
-});
+     // 스크롤 채크 이벤트
+     $(window).on('scroll', function(){
+       // 스크롤이 얼마나 
+       console.log($(window).scrollTop())
+       if($(this).scrollTop() > scrollDepth) {
+         // 배경 추가
+         $('header').addClass('down');
+       } else {
+         // 배경 제거
+         $('header').removeClass('down');
+       }
+     })
+ })
 
