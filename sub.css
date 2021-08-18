@@ -31,24 +31,24 @@
 
 #Sub1_contents .breadCrumb{
     position: absolute;
-    top: 90px;
-    left: 10%;
     width: 1500px;
     height: 340px;
+    top: 180px;
+    left: 20%;
 }
 
 #Sub1_contents .breadCrumb h2 {
     position: relative;
-    top: 120px;
-    left: 225px;
-    font-size: 14px;
+    font-size: 15px;
+    top: 80px;
+    left: 4px;
+    color : #fff;
 }
 
 #Sub1_contents .breadCrumb h3{
     position: relative;
-    top: 150px;
-    left : 225px;
     font-size: 40px;
+    color : #fff;
 }
 
 /*sub1_SUB_GNB*/
@@ -168,9 +168,6 @@
 #Location .container .map p {
     text-align: center;
 }
-#Location .container iframe {
-    margin-top: 40px;
-}
 #Location .container .spot {
     text-align: left;
 }
@@ -198,11 +195,6 @@
 }
 #Location .container .map-detail .Spot {
     margin-right: 300px;
-}
-#Location .container .map-detail .phone-number {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
 }
 #Location .container .map-detail .Spot .hanam {
     margin-right: 100px;
@@ -394,13 +386,12 @@
 
 #Sub4 #Sub1_contents .breadCrumb h3{
     position: relative;
-    top: 150px;
-    left : -40px;
     font-size: 40px;
 }
 #Sub4 #Sub1_contents .Sub_GNB li{
     position: relative;
     width: 400px;    
+
 }
 
 #Sub_Product .wrapper{
