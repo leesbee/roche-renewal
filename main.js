@@ -23,7 +23,27 @@ $(function(){
     $Main_active.removeClass('active');
     $(this).addClass('active');      
     })
+  });
+
+
+//메인페이지 회사소개
+$(document).ready(function(){
+  var next = $('.right a i');
+  var prev = $('.left a i');
+  var BottomLayout = $('#bl_2')
+
+  next.click(function(e){
+    e.preventDefault();
+    $('#bl_1').stop().hide();
+    BottomLayout.stop().show();
   })
+  prev.click(function(e){
+    e.preventDefault();
+    BottomLayout.stop().hide();
+    $('#bl_1').stop().show();
+  })
+})
+
 
   //서브 네비게이션 //
   

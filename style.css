@@ -185,6 +185,7 @@ header > #Sub_nav .gnb{
     position: relative;
     margin: 0 auto;
     width : 1500px;
+    bottom: 40px;
     /* height: 800px; */
     /* top: 50%; */
 }
@@ -285,6 +286,28 @@ strong img{
 .Text p{
     font-size : 16px;
     padding-top : 80px;
+}
+
+/*BottomLayout 2(=#bl_2)*/
+.container #bl_2{
+    display: none;
+    height: 55vh;
+}
+
+#bl_2 .pagenumber{
+    top: 30%;
+    left: 13%;
+}
+#bl_2 > .Text{
+    position: relative;
+    left: 27%;
+    top: 40%;
+}
+
+#bl_2 img{
+   position: relative;
+   top: -15%;
+   left: 50%;
 }
 
 /*News Table*/
